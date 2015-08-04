@@ -1,0 +1,9 @@
+{
+  "modules": "umdStrict",
+  "comments": false,
+  "sourceMaps": true,
+  "loose": ["all"],
+  "ignore": [
+    "**/*.js"
+  ]
+}

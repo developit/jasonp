@@ -1,0 +1,36 @@
+{
+  "name": "jasonp",
+  "version": "0.1.0",
+  "description": "Small JSONP implementation with node-style callbacks and a timeout.",
+  "main": "jasonp.js",
+  "scripts": {
+    "transpile": "babel *.es -s --out-dir .",
+    "minify": "uglifyjs -c sequences,dead_code,conditionals,booleans,unused,if_return,join_vars,drop_console -m -o index.js --in-source-map index.js.map --source-map index.js.map -- index.js",
+    "size": "size=$(gzip-size index.js) && echo \"gzip size: $size / $(pretty-bytes $size)\"",
+    "build": "npm run transpile && npm run minify && npm run size",
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/developit/jasonp.git"
+  },
+  "author": "Jason Miller <jason@developit.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developit/jasonp/issues"
+  },
+  "homepage": "https://github.com/developit/jasonp",
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "gzip-size": "^2.0.3",
+    "pretty-bytes": "^2.0.1",
+    "uglify-js": "^2.4.23",
+    "xo": "^0.4.3"
+  },
+  "xo": {
+    "esnext": true,
+    "ignore": [
+      "**.js"
+    ]
+  }
+}
