@@ -1,4 +1,4 @@
-jasonp
+jasonp [![npm]](http://npm.im/jasonp) [![bower]](http://bower.io/search/?q=jasonp)
 ======
 
 A tiny module that provides a logical interface for making JSONP requests.
@@ -36,4 +36,6 @@ License
 
 MIT
 
+[npm]: https://img.shields.io/npm/v/jasonp.svg
+[bower]: https://img.shields.io/bower/v/jasonp.svg
 [praline]: (https://github.com/developit/praline)
