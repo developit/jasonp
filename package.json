@@ -1,6 +1,6 @@
 {
   "name": "jasonp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small JSONP implementation with node-style callbacks and a timeout.",
   "main": "jasonp.js",
   "scripts": {
