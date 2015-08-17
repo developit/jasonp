@@ -5,10 +5,10 @@
   "main": "jasonp.js",
   "scripts": {
     "transpile": "babel *.es -s --out-dir .",
-    "minify": "uglifyjs -c sequences,dead_code,conditionals,booleans,unused,if_return,join_vars,drop_console -m -o index.js --in-source-map index.js.map --source-map index.js.map -- index.js",
     "size": "size=$(gzip-size index.js) && echo \"gzip size: $size / $(pretty-bytes $size)\"",
-    "build": "npm run transpile && npm run minify && npm run size",
-    "test": "xo"
+    "build": "npm run transpile && npm run size",
+    "test": "xo",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,6 @@
     "babel": "^5.6.23",
     "gzip-size": "^2.0.3",
     "pretty-bytes": "^2.0.1",
-    "uglify-js": "^2.4.23",
     "xo": "^0.4.3"
   },
   "xo": {
