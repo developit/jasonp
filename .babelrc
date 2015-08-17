@@ -1,6 +1,7 @@
 {
-  "modules": "umdStrict",
+  "modules": "umd",
   "loose": ["all"],
+  "moduleId": "jasonp",
   "sourceMaps": true,
   "comments": false,
   "compact": true,
