@@ -22,7 +22,7 @@ export default (url, cb) => {
 		s = cb = g[fn] = null;
 		delete g[fn];
 	};
-	timer = setTimeout( λ => {
+	timer = setTimeout( () => {
 		err = 'Timed out';
 		g[fn]();
 	}, TIMEOUT);

@@ -1,11 +1,8 @@
 {
   "modules": "umd",
-  "loose": ["all"],
+  "loose": "all",
   "moduleId": "jasonp",
   "sourceMaps": true,
   "comments": false,
-  "compact": true,
-  "ignore": [
-    "**/*.js"
-  ]
+  "compact": true
 }

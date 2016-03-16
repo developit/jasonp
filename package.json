@@ -2,12 +2,12 @@
   "name": "jasonp",
   "version": "0.1.2",
   "description": "Small JSONP implementation with node-style callbacks and a timeout.",
-  "main": "jasonp.js",
+  "main": "dist/jasonp.js",
   "scripts": {
-    "transpile": "babel *.es -s --out-dir .",
-    "size": "size=$(gzip-size index.js) && echo \"gzip size: $size / $(pretty-bytes $size)\"",
-    "build": "npm run transpile && npm run size",
-    "test": "xo",
+    "transpile": "mkdirp dist && babel src -d dist -s",
+    "size": "echo \"gzip size: $(gzip-size $npm_package_main | pretty-bytes)\"",
+    "build": "npm run -s transpile && npm run -s size",
+    "test": "eslint src",
     "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "repository": {
@@ -21,15 +21,11 @@
   },
   "homepage": "https://github.com/developit/jasonp",
   "devDependencies": {
-    "babel": "^5.6.23",
-    "gzip-size": "^2.0.3",
-    "pretty-bytes": "^2.0.1",
-    "xo": "^0.4.3"
-  },
-  "xo": {
-    "esnext": true,
-    "ignore": [
-      "**.js"
-    ]
+    "babel": "^5.8.35",
+    "babel-eslint": "^4.1.8",
+    "eslint": "^2.2.0",
+    "gzip-size-cli": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "pretty-bytes-cli": "^1.0.0"
   }
 }
