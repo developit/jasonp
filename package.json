@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/developit/jasonp",
   "devDependencies": {
-    "babel": "^5.8.35",
-    "babel-eslint": "^4.1.8",
-    "eslint": "^2.2.0",
-    "gzip-size-cli": "^1.0.0",
+    "babel": "^6.23.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "gzip-size-cli": "^2.0.0",
     "mkdirp": "^0.5.1",
-    "pretty-bytes-cli": "^1.0.0"
+    "pretty-bytes-cli": "^2.0.0"
   }
 }
