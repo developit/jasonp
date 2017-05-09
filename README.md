@@ -1,6 +1,8 @@
 jasonp [![npm]](http://npm.im/jasonp) [![bower]](http://bower.io/search/?q=jasonp)
 ======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/jasonp.svg)](https://greenkeeper.io/)
+
 A tiny module that provides a logical interface for making JSONP requests.
 
 > _This is supposed to be funny because my name is Jason._
